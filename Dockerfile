@@ -28,6 +28,4 @@ EXPOSE 8080
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
   
-CMD ["/home/app/wstunnel", "server",
-     "--restrict-to", "127.0.0.1:51820",
-     "0.0.0.0:8080"]
+CMD ["/home/app/wstunnel", "server", "--restrict-to", "127.0.0.1:51820", "0.0.0.0:8080"]
